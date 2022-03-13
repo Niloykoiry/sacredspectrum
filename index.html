@@ -11,47 +11,110 @@
       crossorigin="anonymous"
     />
     <title>Sacred Spectrum</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&family=Roboto+Slab:wght@400;500&display=swap");
+      body {
+        font-family: "Roboto", sans-serif !important;
+      }
+      .hero {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: transparent;
+        background-image: linear-gradient(
+            45deg,
+            rgba(178, 1, 237, 0.25) 0%,
+            rgba(247, 230, 253, 0.25) 100%
+          ),
+          url("./assests/banner.jpg");
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+      }
+      .section-title {
+        font-family: "Dancing Script", cursive;
+        font-size: 92px;
+        color: #b301ed;
+        text-align: center;
+      }
+      .subtitle {
+        color: #5a5a5a;
+        font-family: "Roboto Slab", Sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        -webkit-text-stroke: 1px;
+        stroke-width: 1px;
+        -webkit-text-stroke-color: #363636;
+        stroke: #363636;
+        text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+        text-align: center;
+        margin: 15px 0 50px 0;
+        font-family: "Roboto Slab", serif;
+      }
+      .module-content {
+        color: #464646;
+      }
+      .module-content p {
+        color: #b500db;
+        font-family: "Roboto Slab", Sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        -webkit-text-stroke: 1px;
+        stroke-width: 1px;
+        -webkit-text-stroke-color: #363636;
+        stroke: #363636;
+        text-shadow: 3px 3px 5px rgb(0 0 0 / 30%);
+      }
+
+      .module-content ul li {
+        font-size: 22px;
+        color: #464646;
+        font-weight: 500;
+      }
+      .website-link {
+        color: #b500db;
+        font-family: "Roboto Slab", Sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        -webkit-text-stroke: 1px;
+        stroke-width: 1px;
+        -webkit-text-stroke-color: #363636;
+        stroke: #363636;
+        text-shadow: 3px 3px 5px rgb(0 0 0 / 30%);
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="card">
-            <img
-              src="assests/shutterstock_photo_1312664393-scaled.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Sacred Spectrum</h5>
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="card-text">
-                    Yoga Therapy for Autism Training For educators, caregivers,
-                    and therapists By Sacred spectrum.To learn more or enroll
-                  </p>
-                  <ul>
-                    <li>Module 1 may 14-15</li>
-                    <li>Module 2 June 25-26</li>
-                  </ul>
-                  <p>To learn more or enroll</p>
-                </div>
-                <div class="col-md-6">
-                  <img src="/assests/QRCode.png" alt="" /
-                  style="height:400px;width:400px">
-                  <p>
-                    <a href="https://sacredspectrum.org/"
-                      >https://sacredspectrum.org/</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
+    <h2>Sacred Spectrum</h2>
+
+    <section class="container hero p-5">
+      <div class="row align-items-center">
+        <h2 class="section-title">Sacred Spectrum</h2>
+        <p class="subtitle">
+          Yoga Therapy for Autism Training For educators, caregivers, and
+          therapists By Sacred spectrum.
+        </p>
+        <div class="col-6">
+          <div class="module-content">
+            <p>To learn more or enroll</p>
+            <ul>
+              <li>Module 1 may 14-15</li>
+              <li>Module 2 June 25-26</li>
+            </ul>
           </div>
         </div>
+        <div class="col-6 text-center">
+          <img
+            src="/assests/QRCode.png"
+            alt=""
+            style="width: 300px; height: auto"
+          />
+          <p class="website-link">
+            <a href="https://sacredspectrum.org/"
+              >https://sacredspectrum.org/</a
+            >
+          </p>
+        </div>
       </div>
-    </div>
-
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
